@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap')
+
+@import './pages/animation'
+    
+*
+    margin: 0
+    font-family: sans-serif
+
+    body
+        background-color: rgb(88, 105, 124)
+        height: 100vh
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: ease-in-out 0.5s
+        overflow: hidden
+        padding: 0 3%
+
+        #background_effect
+            position: fixed
+            top: 0
+            left: 0
+            height: 100%
+            width: 100%
+            background-image: url('../images/texture_a.png')
+            opacity: 0.08
+            background-size: 40%
+
+
+::-webkit-scrollbar
+    width: 5px
+
+::-webkit-scrollbar-track
+    background: none
+    
+::-webkit-scrollbar-thumb
+    background: #fff1877a 
+    border-radius: 3
+
+
+@media (max-width: 1200px)
+    body
+        flex-wrap: wrap
+        overflow: hidden scroll
+        padding: 5%
+ 
+
+
+        

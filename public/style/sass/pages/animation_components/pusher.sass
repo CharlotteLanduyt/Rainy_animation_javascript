@@ -1,0 +1,70 @@
+#pusher
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 999
+
+    #hand_push
+        height: 10vh
+        width: 2vw
+        border: solid 5px #ffffff45
+        border-radius: 50%
+        border-top: none
+        border-bottom: none
+        border-right: none
+        left: 20%
+        top: 50%
+        position: absolute
+        z-index: 999
+        display: flex
+        justify-content: center
+        align-items: start
+
+        #push_button
+            top: 0
+            right: 0
+            margin-right: 60%
+            width: 30px
+            height: 10px
+            border-radius: 2px 5px 2px 5px
+            border: solid 1.5px #fff39c
+            position: absolute
+            background-color: #ffffff78
+            backdrop-filter: blur(4px)
+            display: flex
+            align-items: center
+            justify-content: right
+            padding: 2px 5px
+            pointer-events: auto
+
+            div
+                height: 9px
+                width: 9px
+                background-color: #ff8d5c
+                border: solid 0.5px #ff2d0d
+                border-radius: 50%
+
+            &:hover
+                cursor: pointer
+
+
+    #bubblegum_animation
+        height: 15vw
+        width: 15vw
+        left: 36%
+        top: 52%
+        position: absolute
+
+        #bubble_image
+            height: 0%
+            width: 0%
+            background-image: url('../images/bubblegum.png')
+            background-position: center
+            background-size: contain
+            background-repeat: no-repeat
+            position: absolute
+            z-index: 999
+            transform: translate(-50%, -50%)
+            transform-origin: center
+            transition: ease-in-out 0.2s
+        
